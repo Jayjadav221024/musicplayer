@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player by Jay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music_player">
+          <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+              <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+          </nav>
+          <img src="thumb_6930fa3ebea25.webp" class="song-img">
+          <h1>Sitaare</h1>
+          <p>Arijit Singh</p>
+          <audio  id="song">
+              <source src="Sitaare.mp3" type="audio/mp3">
+          </audio>
+          <input type="range" value="0" max="242.92" id="progress">
+          <div class="controls">
+                <div onclick="leftplay()" id="leftplay"><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+                <div onclick="rightplay()" id="rightplay"><i class="fa-solid fa-forward"></i></div>
+          </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
